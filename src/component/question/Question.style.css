@@ -14,14 +14,25 @@
   flex-direction: column;
 }
 .img img {
-  width: 350px;
+  width: 450px;
   border-radius: 1rem;
   filter: drop-shadow(0 0 1rem white);
+}
+
+.question {
+  margin: 1rem 0;
+}
+
+.options h1 {
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .options h1:hover {
   background-color: orange;
   color: white;
+  width: fit-content;
+  padding: 0.4rem;
 }
 
 .timer {
@@ -36,4 +47,32 @@
 }
 .timer h1 {
   padding: 1rem;
+}
+
+.quiz-results {
+  background: linear-gradient(to right, transparent, black);
+
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  align-items: center;
+  color: white;
+}
+
+.answers-summary {
+  background: linear-gradient(to right, transparent, black);
+
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.answer-item {
+  border: 1px solid white;
+  background: linear-gradient(to right, transparent, black);
+  padding: 1rem;
+  margin-top: 0.3rem;
+  border-radius: 1rem;
+  line-height: 2rem;
 }
