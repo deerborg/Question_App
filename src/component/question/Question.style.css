@@ -1,0 +1,39 @@
+.quest-container {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 2rem;
+  background: linear-gradient(to right, transparent, rgb(0, 0, 0));
+  margin: 4rem 4rem;
+  text-align: start;
+}
+.img {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.img img {
+  width: 350px;
+  border-radius: 1rem;
+  filter: drop-shadow(0 0 1rem white);
+}
+
+.options h1:hover {
+  background-color: orange;
+  color: white;
+}
+
+.timer {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border: 1px solid white;
+  width: 10rem;
+}
+.timer h1 {
+  padding: 1rem;
+}

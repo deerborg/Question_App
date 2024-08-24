@@ -1,0 +1,40 @@
+.start-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 50% auto;
+  align-items: center;
+  gap: 5rem;
+  background: linear-gradient(to right, transparent, rgb(0, 0, 0));
+  width: fit-content;
+  border-radius: 1rem;
+}
+
+#start {
+  background-color: transparent;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 3rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.start-para {
+  max-width: 50rem;
+  text-align: center;
+  display: flex;
+  background: linear-gradient(to right, transparent, rgb(0, 0, 0));
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#start:hover {
+  background: linear-gradient(to right, transparent, white);
+  color: orange;
+}

@@ -1,0 +1,16 @@
+@import "./component/start/Start.style.css";
+@import "./component/question/Question.style.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background: linear-gradient(to right, rgb(37, 2, 61), rgb(0, 0, 0));
+  font-family: "Montserrat", sans-serif;
+}
