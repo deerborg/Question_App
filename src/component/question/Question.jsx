@@ -115,7 +115,7 @@ function Question({ questVisible }) {
               <h1>{timer}</h1>
             </div>
             <div className="img">
-              <img src={`/src/assets/${currentQuestion.media}`}></img>
+              <img src={`/assets/${currentQuestion.media}`}></img>
             </div>
             <div className="question">
               <h1>{currentQuestion.question}</h1>
