@@ -21,10 +21,7 @@ function Start() {
             </button>
           </div>
           <div className="start-para">
-            <p>
-              Teste Başla'ya basarak soruları görebilirsiniz. Her soru 10 puan.
-              50 altında alırsan malsın
-            </p>
+            <p>Teste Başla'ya basarak soruları görebilirsiniz.</p>
           </div>
         </div>
       )}
