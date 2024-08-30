@@ -76,3 +76,19 @@
   border-radius: 1rem;
   line-height: 2rem;
 }
+
+.general-result {
+  background-color: transparent;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.start-para {
+  display: flex;
+  font-size: 1.3rem;
+}

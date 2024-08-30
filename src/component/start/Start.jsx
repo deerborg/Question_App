@@ -21,7 +21,12 @@ function Start() {
             </button>
           </div>
           <div className="start-para">
-            <p>Teste Başla'ya basarak soruları görebilirsiniz.</p>
+            <p>
+              Teste Başla'ya basarak soruları görebilirsiniz.10 adet soru
+              bulunmaktadır. Yanıtlanan sorulara geri dönemezsin ve 30 saniye
+              içinde cevaplamazsan diğer soruya geçecektir. Test sonunda
+              değerlendirme formunu görebilirsin. Başarılar.
+            </p>
           </div>
         </div>
       )}

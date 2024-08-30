@@ -33,9 +33,8 @@ function Question({ questVisible }) {
   }, [questVisible, timer]);
 
   const handleOptionSelect = (option) => {
-    if (disabled) return; // Tıklamayı devre dışı bırak
-    setDisabled(true); // Tıklamayı devre dışı bırakmak için state'i güncelle
-
+    if (disabled) return;
+    setDisabled(true);
     const isCorrect = option === currentQuestion.answer;
     if (isCorrect) {
       setScore((prevScore) => ({
@@ -56,7 +55,7 @@ function Question({ questVisible }) {
 
     setTimeout(() => {
       handleNextQuestion();
-    }, 300); // 1 saniye bekledikten sonra sonraki soruya geç
+    }, 0);
   };
 
   const handleNextQuestion = () => {
@@ -64,9 +63,8 @@ function Question({ questVisible }) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setTimer(30);
       setDelay(false);
-      setDisabled(false); // Yeni soru başladığında tıklamayı yeniden etkinleştir
+      setDisabled(false);
     } else {
-      // Tüm sorular bitti, quiz tamamlandı
       setQuizFinished(true);
     }
   };
@@ -75,15 +73,22 @@ function Question({ questVisible }) {
     <>
       {quizFinished ? (
         <div className="quiz-results">
-          <h1>Quiz Tamamlandı!</h1>
-          <p>Doğru Sayısı: {score.correct}</p>
-          <p>Yanlış Sayısı: {score.incorrect}</p>
+          <div className="general-result">
+            <h1>Quiz Tamamlandı!</h1>
+            <p>
+              <strong>Doğru Sayısı:</strong> {score.correct}
+            </p>
+            <p>
+              <strong>Yanlış Sayısı:</strong> {score.incorrect}
+            </p>
+          </div>
+
           <div className="answers-summary">
             <h2>Verilen Yanıtlar:</h2>
             {answers.map((answer, index) => (
               <div key={index} className="answer-item">
                 <p>
-                  {index + 1}. Soru: {answer.question}
+                  <strong>{index + 1}. Soru:</strong> {answer.question}
                 </p>
                 <p>
                   Verilen Yanıt:{" "}
@@ -103,7 +108,10 @@ function Question({ questVisible }) {
                   }{" "}
                   - {questions[index].answer}
                 </p>
-                <p>{answer.isCorrect ? "Doğru" : "Yanlış"}</p>
+                <p>
+                  <strong>Sonuç: </strong>
+                  {answer.isCorrect ? "Doğru" : "Yanlış"}
+                </p>
               </div>
             ))}
           </div>
@@ -127,7 +135,7 @@ function Question({ questVisible }) {
                     <h1
                       key={index}
                       onClick={() => handleOptionSelect(option)}
-                      style={{ pointerEvents: disabled ? "none" : "auto" }} // Tıklamayı devre dışı bırak
+                      style={{ pointerEvents: disabled ? "none" : "auto" }}
                     >
                       {optionLabels[index]}. {option}
                     </h1>
