@@ -8,7 +8,7 @@ function Question({ questVisible }) {
   const [answers, setAnswers] = useState([]);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [quizFinished, setQuizFinished] = useState(false);
-  const [disabled, setDisabled] = useState(false); // Yeni state eklendi
+  const [disabled, setDisabled] = useState(false);
 
   const currentQuestion = questions[currentQuestionIndex];
   const optionLabels = ["A", "B", "C", "D"];
