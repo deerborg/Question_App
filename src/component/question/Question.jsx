@@ -88,7 +88,7 @@ function Question({ questVisible }) {
             {answers.map((answer, index) => (
               <div key={index} className="answer-item">
                 <p>
-                  <strong>{index + 1}. Soru:</strong> {answer.question}
+                  <strong>Soru:</strong> {answer.question}
                 </p>
                 <p>
                   Verilen Yanıt:{" "}
